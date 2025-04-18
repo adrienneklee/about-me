@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import childhoodPhoto from '../assets/childhood-photo.png';
+import Skills from "./Skills";
 import Contact from "./Contact";
 
 const jobTitles = ['Senior Web Specialist', 'Frontend Developer', 'Mom 👩‍👧'];
@@ -16,10 +17,10 @@ const AboutMe = () => {
         return() => clearInterval(timer);
     }, []);
     return (
-        <section className="bg-[#f5f5f5] flex flex-col md:flex-row md:justify-around">
+        <section className="flex flex-col md:flex-row md:justify-around">
             <div className="w-full md:w-1/2 text-left">
-                <h1 className="">Hi, I'm Adrienne 👋</h1>
-                <h2 className="relative items-start w-[240px] h-[32px]">
+                <h1 className="font-bold">Hi, I'm Adrienne 👋</h1>
+                <h2 className="relative items-start w-full h-[40px]">
                     <AnimatePresence mode="wait">
                         <motion.h2
                             key={jobTitles[index]}
@@ -39,10 +40,11 @@ const AboutMe = () => {
                 <p>
                     We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries.
                 </p>
-                <p>
+                <p className="">
                     When I'm not at my computer, you can find me chasing my dog and toddler around the trails of Hamilton, Ontario.
                 </p>
                 <Contact/>
+                <Skills/>
             </div>
 
             <div className="w-full md:w-1/4">

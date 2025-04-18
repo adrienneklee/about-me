@@ -1,12 +1,15 @@
+import './App.css';
 import AboutMe from './components/AboutMe';
-import Skills from './components/Skills'
-import './App.css'
+import Contact from './components/Contact';
+import Skills from './components/Skills';
+
 
 function App() {
   return (
     <>
       <AboutMe/>
-      <Skills/>
+      {/* <Contact/> */}
+      {/* <Skills/> */}
     </>
   )
 }
