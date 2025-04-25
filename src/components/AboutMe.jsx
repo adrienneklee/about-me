@@ -17,47 +17,48 @@ const AboutMe = () => {
         return() => clearInterval(timer);
     }, []);
     return (
-        <section className="flex flex-col md:flex-row md:justify-around">
+        <div className="flex flex-row flex-wrap">
             <div className="w-full md:w-1/2 text-left">
                 <h1 className="font-bold">Hi, I'm Adrienne 👋</h1>
                 <h2 className="relative items-start w-full h-[40px]">
-                    <AnimatePresence mode="wait">
-                        <motion.h2
-                            key={jobTitles[index]}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.4 }}
-                            className="absolute left-0 top-0 font-bold"
-                        >
-                            {jobTitles[index]}
-                        </motion.h2>
-                    </AnimatePresence>         
+                <AnimatePresence mode="wait">
+                    <motion.h2
+                        key={jobTitles[index]}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.4 }}
+                        className="absolute left-0 top-0 font-bold"
+                    >
+                    {jobTitles[index]}
+                    </motion.h2>
+                </AnimatePresence>         
                 </h2>
+
                 <p>
-                    I'm currently helping <a href="https://pointblankcreative.ca/" target="blank" rel="noopener noreferrer">Point Blank Creative</a> create winning campaigns across Canada.
+                I'm currently helping <a href="https://pointblankcreative.ca/" target="blank" rel="noopener noreferrer">Point Blank Creative</a> create winning campaigns across Canada.
                 </p>
                 <p>
-                    We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries.
+                We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries.
                 </p>
-                <p className="">
-                    When I'm not at my computer, you can find me chasing my dog and toddler around the trails of Hamilton, Ontario.
+                <p>
+                When I'm not at my computer, you can find me chasing my dog and daughter around the trails of Hamilton, Ontario.
                 </p>
+
                 <Contact/>
                 <Skills/>
             </div>
 
-            <div className="w-full md:w-1/4">
+
+
+            <div className="flex justify-center items-center w-full overflow-hidden px-4 sm:px-6 md:w-1/2">
                 <img
                     src={childhoodPhoto}
                     alt="Childhood Adrienne wearing goggles by a lake."
-                    className="rounded-xl"
+                    className="rounded-xl h-auto max-w-full md:w-1/2 block"
                 />
             </div>
-        </section>
-        
-        
-
+        </div>
     )
 }
 

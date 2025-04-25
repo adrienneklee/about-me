@@ -7,13 +7,44 @@ const Contact = () => {
   return(
     <section className="contact">
       <div className="flex items-baseline space-x-4 mt-4 text-3xl">
-        <a href="https://github.com/adrienneklee" target="blank" rel="noopener noreferrer" className="align-middle contact-icon"><FaGithub/></a> 
-        <a href="https://www.linkedin.com/in/adrienneklee/" target="blank" rel="noopener noreferrer" className="align-middle contact-icon"><FaLinkedin/></a>
-        <a href="mailto: adrienneklee@gmail.com?subject=Hello Adrienne! I saw your portfolio." target="blank" rel="noopener noreferrer" className="align-middle contact-icon"><MdMail/></a>
+       
+        <a href="https://github.com/adrienneklee" 
+          title="Github" 
+          target="blank" 
+          rel="noopener noreferrer" 
+          className="align-middle contact-icon"
+          >
+            <FaGithub/>
+        </a> 
+        
+        <a href="https://www.linkedin.com/in/adrienneklee/" 
+        title="LinkedIn" 
+        target="blank" 
+        rel="noopener noreferrer" 
+        className="align-middle contact-icon"
+        >
+          <FaLinkedin/>
+        </a>
+       
+        <a href="mailto: adrienneklee@gmail.com?subject=Hello Adrienne! I saw your portfolio." 
+        title="Email" 
+        target="blank" 
+        rel="noopener noreferrer" 
+        className="align-middle contact-icon"
+        >
+          <MdMail/>
+        </a>
+
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <a href="/Adrienne-Lee-resume.pdf" target="blank" rel="noopener noreferrer"  className="font-bold resume">Resume</a>
+        <a href="/Adrienne-Lee-resume.pdf" 
+        target="blank" 
+        rel="noopener noreferrer"  
+        className="font-bold resume"
+        >
+          Resume
+        </a>
       </div>
     </section>
 

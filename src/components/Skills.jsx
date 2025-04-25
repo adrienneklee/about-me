@@ -1,7 +1,8 @@
 import { div } from "framer-motion/client";
 import React from "react";
-import { FaReact, FaSass, FaJs, FaPhp, FaGit, FaGithub } from "react-icons/fa";
+import { FaReact, FaSass, FaJs, FaNodeJs, FaGit, FaGithub, FaWordpress } from "react-icons/fa";
 import { SiHtml5, SiCss3, SiRubyonrails } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const Skills = () => {
     return (
@@ -14,10 +15,12 @@ const Skills = () => {
                     <SiCss3 title="CSS3" />
                     <FaSass title="Sass" />
                     <FaJs title="JavaScript" />
-                    <FaPhp title="PHP" />
-                    <SiRubyonrails title="Rails" />
+                    <FaWordpress title="Wordpress" />
+                    <SiRubyonrails title="Ruby on Rails" />
                     <FaGit title="Git" />
                     <FaGithub title="GitHub" />
+                    <FaNodeJs title="NodeJS" />
+                    <IoLogoFirebase title="Firebase" />
                 </div>
             </div>
         </section>

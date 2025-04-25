@@ -1,15 +1,16 @@
 import './App.css';
 import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <>
+    <body>
       <AboutMe/>
-      {/* <Contact/> */}
-      {/* <Skills/> */}
+    </body>
+      
+      <Footer/>
     </>
   )
 }
