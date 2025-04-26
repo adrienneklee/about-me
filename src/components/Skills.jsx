@@ -19,7 +19,7 @@ const Skills = () => {
                     <SiRubyonrails title="Ruby on Rails" />
                     <FaGit title="Git" />
                     <FaGithub title="GitHub" />
-                    <FaNodeJs title="NodeJS" />
+                    {/* <FaNodeJs title="NodeJS" /> */}
                     <IoLogoFirebase title="Firebase" />
                 </div>
             </div>
