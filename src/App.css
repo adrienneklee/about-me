@@ -32,14 +32,34 @@ h1 {
   font-size: 1.8rem;
 }
 
-h2 {
+/* h2 {
   font-size: 1.4rem;
-}
+} */
 
 p {
   font-size: 1rem;
   line-height: 1.6rem;
   margin-bottom: 0.7rem;
+}
+
+.projects h2 {
+  margin: 3rem 0;
+}
+
+.projects h3, p, ul {
+  margin-bottom: 1.2rem;
+}
+
+.project {
+  margin-bottom: 3rem;
+}
+
+.project-btn {
+  border: 1px solid black;
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  margin: 10px 0;
 }
 
 .contact, .skills {

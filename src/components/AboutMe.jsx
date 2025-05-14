@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import childhoodPhoto from '../assets/childhood-photo.png';
 import Skills from "./Skills";
 import Contact from "./Contact";
+import { Link } from "react-router-dom";
 
 const jobTitles = ['Senior Web Specialist', 'Frontend Developer', 'Mom 👩‍👧'];
 
@@ -19,8 +20,8 @@ const AboutMe = () => {
     return (
         <div className="flex flex-row flex-wrap">
             <div className="w-full md:w-1/2 text-left">
-                <h1 className="font-bold">Hi, I'm Adrienne 👋</h1>
-                <h2 className="relative items-start w-full h-[40px]">
+                <h1 className="text-xl font-bold">Hi, I'm Adrienne 👋</h1>
+                <h2 className="text-xl relative items-start w-full h-[40px]">
                 <AnimatePresence mode="wait">
                     <motion.h2
                         key={jobTitles[index]}
@@ -39,7 +40,7 @@ const AboutMe = () => {
                 I'm currently helping <a href="https://pointblankcreative.ca/" target="blank" rel="noopener noreferrer">Point Blank Creative</a> create winning campaigns across Canada.
                 </p>
                 <p>
-                We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries.
+                We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries. A few of my Projects can be found <Link to="/projects">here.</Link>
                 </p>
                 <p>
                 When I'm not at my computer, you can find me chasing my dog and daughter around the trails of Hamilton, Ontario.
