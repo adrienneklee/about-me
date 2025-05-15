@@ -6,9 +6,9 @@ import Footer from './Footer';
 const Home = () => {
   return (
     <>
-      <div>
+      <main role='main'>
         <AboutMe/>
-      </div>
+      </main>
       <Footer/>
     </>
   )

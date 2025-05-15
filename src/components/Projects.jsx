@@ -61,7 +61,7 @@ const Projects = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+            <article className="w-full lg:w-1/2 flex flex-col justify-center">
               <h3 className="text-2xl font-semibold text-w">{project.title}</h3>
               <p className="text-left">{project.description}</p>
               <ul className="flex items-center gap-4 text-2xl">
@@ -85,7 +85,7 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </article>
           </div>
         ))}
         <Footer/>

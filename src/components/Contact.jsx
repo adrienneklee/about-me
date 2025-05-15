@@ -10,7 +10,8 @@ const Contact = () => {
        
         <a href="https://github.com/adrienneklee" 
           title="Github" 
-          target="blank" 
+          aria-label="Github profile"
+          target="_blank" 
           rel="noopener noreferrer" 
           className="align-middle contact-icon"
           >
@@ -19,7 +20,8 @@ const Contact = () => {
         
         <a href="https://www.linkedin.com/in/adrienneklee/" 
         title="LinkedIn" 
-        target="blank" 
+        aria-label="LinkedIn profile"
+        target="_blank" 
         rel="noopener noreferrer" 
         className="align-middle contact-icon"
         >
@@ -28,7 +30,8 @@ const Contact = () => {
        
         <a href="mailto: adrienneklee@gmail.com?subject=Hello Adrienne! I saw your portfolio." 
         title="Email" 
-        target="blank" 
+        aria-label="Email address"
+        target="_blank" 
         rel="noopener noreferrer" 
         className="align-middle contact-icon"
         >
@@ -39,9 +42,10 @@ const Contact = () => {
 
       <div className="flex flex-col md:flex-row">
         <a href="/Adrienne-Lee-resume.pdf" 
-        target="blank" 
+        target="_blank" 
         rel="noopener noreferrer"  
         className="font-bold resume"
+        aria-label="View Adrienne Lee's resume PDF"
         >
           Resume
         </a>

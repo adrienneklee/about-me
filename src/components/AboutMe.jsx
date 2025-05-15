@@ -21,6 +21,7 @@ const AboutMe = () => {
         <div className="flex flex-row flex-wrap">
             <div className="w-full md:w-1/2 text-left">
                 <h1 className="text-xl font-bold">Hi, I'm Adrienne 👋</h1>
+                
                 <h2 className="text-xl relative items-start w-full h-[40px]">
                 <AnimatePresence mode="wait">
                     <motion.h2
@@ -37,7 +38,7 @@ const AboutMe = () => {
                 </h2>
 
                 <p>
-                I'm currently helping <a href="https://pointblankcreative.ca/" target="blank" rel="noopener noreferrer">Point Blank Creative</a> create winning campaigns across Canada.
+                I'm currently helping <a href="https://pointblankcreative.ca/" target="_blank" rel="noopener noreferrer">Point Blank Creative</a> create winning campaigns across Canada.
                 </p>
                 <p>
                 We use a breadth of tools to help our clients grow their tech stacks; however, I specialize in <span className="font-bold">React</span> and frontend libraries. A few of my Projects can be found <Link to="/projects">here.</Link>
