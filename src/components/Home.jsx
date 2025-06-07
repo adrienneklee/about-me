@@ -6,7 +6,7 @@ import Footer from './Footer';
 const Home = () => {
   return (
     <>
-      <main role='main'>
+      <main role="main" id="main-content">
         <AboutMe/>
       </main>
       <Footer/>

@@ -46,7 +46,7 @@ const projectData = [
 const Projects = () => {
     return (
       <section className="projects mx-auto">
-        <h2 className="text-3xl font-bold">Projects</h2>
+        <h1 className="text-3xl font-bold">Projects</h1>
         {projectData.map((project, id) => (
           <div
             key={id}
@@ -62,7 +62,7 @@ const Projects = () => {
               />
             </div>
             <article className="w-full lg:w-1/2 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold text-w">{project.title}</h3>
+              <h2 className="text-2xl font-semibold text-w">{project.title}</h2>
               <p className="text-left">{project.description}</p>
               <ul className="flex items-center gap-4 text-2xl">
               {project.tech.map((Icon, i) => (
