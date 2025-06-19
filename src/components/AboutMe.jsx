@@ -49,7 +49,7 @@ const AboutMe = () => {
                             href="https://pointblankcreative.ca/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="underline text-blue-400 hover:text-blue-200"
+                            className="text-blue-400 hover:text-blue-200"
                         >
                             Point Blank Creative
                         </a>{" "}
@@ -59,7 +59,7 @@ const AboutMe = () => {
                         We use a breadth of tools to help our clients grow their tech stacks;
                         however, I specialize in <strong>React</strong> and frontend libraries.
                         A few of my Projects can be found{" "}
-                        <Link to="/projects" className="underline text-blue-400 hover:text-blue-200">
+                        <Link to="/projects" className="text-blue-400 hover:text-blue-200">
                             here.
                         </Link>
                     </p>

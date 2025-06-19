@@ -41,7 +41,7 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <a href="/Adrienne-Lee-resume.pdf" 
+        <a href="/adrienne-lee-resume.pdf" 
         target="_blank" 
         rel="noopener noreferrer"  
         className="font-bold resume"
