@@ -2,9 +2,11 @@ import React from "react";
 import familySmartHero from '../assets/family-smart-hero.png';
 import oflHero from '../assets/ofl-hero.png';
 import safeSpacesHero from '../assets/safespaces-hero.png';
+import kitsuHero from '../assets/kitsu-hero.png';
 import { FaReact, FaSass, FaJs } from "react-icons/fa";
-import { SiHtml5, SiCss3 } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5"; 
+import { SiHtml5, SiCss3, SiReactrouter } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 import Footer from './Footer';
 
 const projectData = [
@@ -21,17 +23,28 @@ const projectData = [
     },
     {
         id: 2,
-        title: 'Safe Spaces Toronto',
-        description: 'An application built with React, Safe Spaces seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals. Safe Spaces utilizes data from the Refuge Washroom API, Geolocation, and Firebase.',
-        image: safeSpacesHero,
-        tech: [<SiHtml5/>, <SiCss3/>, <FaReact/>, <IoLogoFirebase/>],
+        title: 'kitsu Dining',
+        description: 'A React site built with Vite and TailwindCSS for a fine dining entrepreneur. The site features animated page transitions, modular routing with react-router-dom, and a responsive image gallery with a custom lightbox. Emphasis is placed on minimalist UX, optimized asset loading, and accessible markup.',
+        image: kitsuHero,
+        tech: [<SiHtml5/>, <RiTailwindCssFill />, <FaReact/>, <SiReactrouter />],
         links: [
-            {label: 'Live Link', href: 'https://safe-spaces-toronto.netlify.app/'},
-            {label: 'GitHub Repo', href: 'https://github.com/adrienneklee/AdrienneLeeProjectThree'},
+            {label: 'Live Link', href: 'https://kitsu.ca/'},
+            {label: 'GitHub Repo', href: 'https://github.com/adrienneklee/kitsu'},
         ]
     },
     {
-        id: 3,
+      id: 3,
+      title: 'Safe Spaces Toronto',
+      description: 'An application built with React, Safe Spaces seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals. Safe Spaces utilizes data from the Refuge Washroom API, Geolocation, and Firebase.',
+      image: safeSpacesHero,
+      tech: [<SiHtml5/>, <SiCss3/>, <FaReact/>, <IoLogoFirebase/>],
+      links: [
+          {label: 'Live Link', href: 'https://safe-spaces-toronto.netlify.app/'},
+          {label: 'GitHub Repo', href: 'https://github.com/adrienneklee/AdrienneLeeProjectThree'},
+      ]
+    },
+    {
+        id: 4,
         title: 'Enough is Enough',
         description: 'A fully responsive PSD conversion incorporating interactive UI components such as animated transitions, a floating video player, accordion sections, and multilingual support. The project was a rapid-turnaround microsite designed to support a high-profile client campaign. Following the static build, the styling and layout were modularized and implemented as a custom WordPress theme to support content management and scalability.',
         image: oflHero,
