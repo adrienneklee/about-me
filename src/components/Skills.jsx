@@ -1,8 +1,10 @@
-import { div } from "framer-motion/client";
+// import { div } from "framer-motion/client";
 import React from "react";
 import { FaReact, FaSass, FaJs, FaNodeJs, FaGit, FaGithub, FaWordpress } from "react-icons/fa";
 import { SiHtml5, SiCss3, SiRubyonrails } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5";
+import { GrGraphQl } from "react-icons/gr";
+import { RiTailwindCssFill } from "react-icons/ri";
+// import { IoLogoFirebase } from "react-icons/io5";
 
 const Skills = () => {
     return (
@@ -22,6 +24,9 @@ const Skills = () => {
                     <span className="sr-only">SASS</span>
                     <FaSass title="Sass" aria-hidden="true"/>
 
+                    <span className="sr-only">Tailwind CSS</span>
+                    <RiTailwindCssFill title="Tailwind CSS" aria-hidden="true"/>
+
                     <span className="sr-only">Javascript</span>
                     <FaJs title="JavaScript" aria-hidden="true"/>
 
@@ -37,10 +42,14 @@ const Skills = () => {
                     <span className="sr-only">GitHub</span>
                     <FaGithub title="GitHub" aria-hidden="true"/>
 
-                    {/* <FaNodeJs title="NodeJS" /> */}
+                    <span className="sr-only">Node JS</span>
+                    <FaNodeJs title="NodeJS" />
 
-                    <span className="sr-only">Firebase</span>
-                    <IoLogoFirebase title="Firebase" aria-hidden="true"/>
+                    <span className="sr-only">GraphQl</span>
+                    <GrGraphQl title="GraphQl" />
+
+                    {/* <span className="sr-only">Firebase</span>
+                    <IoLogoFirebase title="Firebase" aria-hidden="true"/> */}
                 </div>
             </div>
         </section>
