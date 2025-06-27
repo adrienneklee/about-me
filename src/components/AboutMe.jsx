@@ -5,7 +5,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 
-const jobTitles = ['Frontend Developer', 'React Specialist', 'Mom 👩‍👧', '10+ Years Project Management'];
+const jobTitles = ['Technical Product Manager', 'Frontend Developer', 'React Specialist', 'Mom 👩‍👧'];
 
 const AboutMe = () => {
     const [index, setIndex] = useState(0);
@@ -13,7 +13,7 @@ const AboutMe = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % jobTitles.length);
-        }, 3000);
+        }, 4000);
         return () => clearInterval(timer);
     }, []);
 
