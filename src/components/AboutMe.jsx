@@ -18,7 +18,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <main className="flex flex-row flex-wrap p-4 md:p-8" role="main">
+        <main className="flex flex-row flex-wrap-reverse p-4 md:p-8" role="main">
             {/* Text Section */}
             <section className="w-full md:w-1/2 text-left" aria-labelledby="about-heading">
                 <h1 id="about-heading" className="text-2xl font-bold mb-2">
@@ -44,20 +44,9 @@ const AboutMe = () => {
                 {/* Bio */}
                 <div className="mt-4 space-y-4 text-base">
                     <p>
-                        I'm currently helping{" "}
-                        <a
-                            href="https://pointblankcreative.ca/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-200"
-                        >
-                            Point Blank Creative
-                        </a>{" "}
-                        create winning campaigns across Canada.
+                    With over 10 years managing projects and building user-focused tools for nonprofits, startups, and agencies, I love creating digital experiences that feel intuitive and inclusive. I’ve taken projects from 0 → 1 — from global platforms to campaign tools — always with a focus on accessibility and meaningful impact.
                     </p>
                     <p>
-                        We use a breadth of tools to help our clients grow their tech stacks;
-                        however, I specialize in <strong>React</strong> and frontend libraries.
                         A few of my Projects can be found{" "}
                         <Link to="/projects" className="text-blue-400 hover:text-blue-200">
                             here.
@@ -67,6 +56,9 @@ const AboutMe = () => {
                         When I'm not at my computer, you can find me chasing my dog and daughter
                         around the trails of Hamilton, Ontario.
                     </p>
+                    <p className="italic">
+                        I'm currently open and actively seeking new projects and opportunities. 
+                    </p>
                 </div>
 
                 <Contact />
@@ -75,13 +67,13 @@ const AboutMe = () => {
 
             {/* Image Section */}
             <section
-                className="flex justify-center items-center w-full overflow-hidden px-4 sm:px-6 md:w-1/2"
+                className="flex justify-center items-center w-full overflow-hidden md:w-1/2 sm:px-6 mb-8 md:mb-0"
                 aria-label="Photo of Adrienne"
             >
                 <img
                     src={childhoodPhoto}
                     alt="Childhood Adrienne wearing goggles by a lake."
-                    className="rounded-xl h-auto max-w-full md:w-1/2 block"
+                    className="rounded-xl h-auto md:w-3/4 block"
                 />
             </section>
         </main>
