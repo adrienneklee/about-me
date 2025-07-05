@@ -120,9 +120,8 @@ const Projects = () => {
             </article>
           </div>
         ))}
-        {/* <Footer/> */}
       </section>
-      <Footer/>
+      {/* <Footer/> */}
       </>
     )
 }
