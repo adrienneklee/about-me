@@ -77,7 +77,7 @@ const Projects = () => {
     return (
       <>
       <section className="projects mx-auto">
-        <h1 className="text-3xl font-bold">Projects</h1>
+        <h1 className="text-3xl font-bold">Projects 🗃</h1>
         {projectData.map((project, id) => (
           <div
             key={id}
