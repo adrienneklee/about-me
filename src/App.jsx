@@ -8,7 +8,7 @@ import { initGA } from './utils/analytics';
 
 function App() {
   useEffect(() => {
-    initGA(); // Initialize GA4
+    initGA(); 
   }, []);
 
   return (

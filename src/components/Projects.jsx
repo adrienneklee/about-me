@@ -81,9 +81,7 @@ const Projects = () => {
         {projectData.map((project, id) => (
           <div
             key={id}
-            className={`project flex flex-col lg:flex-row ${
-              project.flip ? 'lg:flex-row-reverse' : ''
-            } items-center mb-20 gap-10`}
+            className={`project flex flex-col lg:flex-row items-center mb-20 gap-10`}
           >
             <div className="w-full lg:w-1/2">
               <img
@@ -97,7 +95,12 @@ const Projects = () => {
               <p className="text-left">{project.description}</p>
               <ul className="flex items-center gap-4 text-2xl">
               {project.tech.map((techItem, i) => (
-                <li key={i} className="text-black" aria-label={techItem.label} title={techItem.label}>
+                <li 
+                  key={i} 
+                  className="text-black" 
+                  aria-label={techItem.label} 
+                  title={techItem.label}
+                >
                   {techItem.icon} 
                   <span className="sr-only" >{techItem.label}</span>
                 </li>
